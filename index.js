@@ -7,7 +7,8 @@ const { response } = require('express');
 const { TOKEN, SERVER_URL } = process.env;
 const TELEGRAM_API = `https://api.telegram.org/bot${TOKEN}`;
 const URI = `/webhook/${TOKEN}`;
-const WEBHOOK_URL = SERVER_URL + URI;
+// const WEBHOOK_URL = SERVER_URL + URI;
+const WEBHOOK_URL = URI;
 const WORD_DEF_URL = 'https://api.dictionaryapi.dev/api/v2/entries/en/';
 
 const PORT = process.env.PORT || 80;
